@@ -1,0 +1,36 @@
+{
+  "structure":{
+    "tables":{
+      "Artist":"([Id] PRIMARY KEY, [Title])"
+    },
+    "otherSQL": [
+      "CREATE UNIQUE INDEX Artist_ID ON Artist(Id)"
+    ]
+  },
+  "data":{
+    "inserts":{
+      "Artist":[
+        {
+          "Id":"1",
+          "Title":"Fred"
+        },
+        {
+          "Id":"2",
+          "Title":"Bob"
+        },
+        {
+          "Id":"3",
+          "Title":"Tom"
+        },
+        {
+          "Id":"4",
+          "Title":"Dick"
+        },
+        {
+          "Id":"5",
+          "Title":"Harry"
+        }
+      ]
+    }
+  }
+}

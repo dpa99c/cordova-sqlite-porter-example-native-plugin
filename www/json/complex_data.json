@@ -1,0 +1,40 @@
+{
+  "data":{
+    "inserts":{
+      "Album":[
+        {
+          "AlbumId": 348,
+          "Title": "An inserted album by Philip Glass Ensemble",
+          "ArtistId": 275
+        },
+        {
+          "AlbumId": 347,
+          "Title": "A replaced album by Philip Glass Ensemble",
+          "ArtistId": 275
+        }
+      ]
+    },
+    "updates":{
+      "Album":[
+        {
+          "set":
+            {
+              "Title":"Mozart: Chamber Music (updated)"
+            }
+          ,
+          "where":
+            {
+              "AlbumId":"346"
+            }
+        }
+      ]
+    },
+    "deletes":{
+      "Album":[
+        {
+          "AlbumId":"345"
+        }
+      ]
+    }
+  }
+}

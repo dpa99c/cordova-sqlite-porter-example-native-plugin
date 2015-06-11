@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS Artist;
+CREATE TABLE Artist ([Id] PRIMARY KEY, [Title]);
+CREATE UNIQUE INDEX Artist_ID ON Artist(Id);
+INSERT OR REPLACE INTO Artist(Id,Title) VALUES ('1','Fred');
+INSERT OR REPLACE INTO Artist(Id,Title) VALUES ('2','Bob');
+INSERT OR REPLACE INTO Artist(Id,Title) VALUES ('3','Tom');
+INSERT OR REPLACE INTO Artist(Id,Title) VALUES ('4','Dick');
+INSERT OR REPLACE INTO Artist(Id,Title) VALUES ('5','Harry');

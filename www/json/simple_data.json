@@ -1,0 +1,38 @@
+{
+  "data":{
+    "inserts":{
+      "Artist":[
+        {
+          "Id":"1",
+          "Title":"Claire (replaced)"
+        },
+        {
+          "Id":"6",
+          "Title":"Jane (inserted)"
+        }
+      ]
+    },
+    "updates":{
+      "Artist":[
+        {
+          "set":
+            {
+              "Title":"Susan (updated)"
+            }
+          ,
+          "where":
+            {
+              "Id":"2"
+            }
+        }
+      ]
+    },
+    "deletes":{
+      "Artist":[
+        {
+          "Id":"5"
+        }
+      ]
+    }
+  }
+}
