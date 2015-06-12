@@ -32,7 +32,7 @@ For example, to run on the Android platform, execute the following commands from
 
 - Install the Android platform: `$ cordova platform add android`
 - Add the native SQLite plugin to the platform: `$ cordova plugin add io.litehelpers.cordova.sqlite`
-- Add the sqlite-porter plugin to the platform: `$ cordova plugin add cordova-sqlite-porter`
+- Add the sqlite-porter plugin to the platform: `$ cordova plugin add uk.co.workingedge.cordova.plugin.sqliteporter`
 - Build and run the project: `$ cordova run android`
 
 

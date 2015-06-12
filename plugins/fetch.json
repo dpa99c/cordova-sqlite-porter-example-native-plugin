@@ -15,10 +15,10 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-sqlite-porter": {
+    "uk.co.workingedge.cordova.plugin.sqliteporter": {
         "source": {
             "type": "registry",
-            "path": "cordova-sqlite-porter"
+            "id": "uk.co.workingedge.cordova.plugin.sqliteporter"
         },
         "is_top_level": true,
         "variables": {}
