@@ -1,6 +1,9 @@
 var db, text, searchTable;
 
 function onDeviceReady(){
+    // Init performance API
+    Performance.init();
+    
     // Open native DB via plugin
     db = window.sqlitePlugin.openDatabase({name: "test.db"});
 

@@ -1,3 +1,5 @@
 /.idea
 /platforms
 /plugins/android.json
+
+plugins/ios.json
