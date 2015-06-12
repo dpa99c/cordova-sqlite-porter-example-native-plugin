@@ -1,33 +1,33 @@
 {
   "structure":{
     "tables":{
-      "Artist":"([Id] PRIMARY KEY, [Title])"
+      "Album":"([AlbumId] PRIMARY KEY, [Title])"
     },
     "otherSQL": [
-      "CREATE UNIQUE INDEX Artist_ID ON Artist(Id)"
+      "CREATE UNIQUE INDEX Album_ID ON Album(AlbumId)"
     ]
   },
   "data":{
     "inserts":{
-      "Artist":[
+      "Album":[
         {
-          "Id":"1",
+          "AlbumId":"1",
           "Title":"Fred"
         },
         {
-          "Id":"2",
+          "AlbumId":"2",
           "Title":"Bob"
         },
         {
-          "Id":"3",
+          "AlbumId":"3",
           "Title":"Tom"
         },
         {
-          "Id":"4",
+          "AlbumId":"4",
           "Title":"Dick"
         },
         {
-          "Id":"5",
+          "AlbumId":"5",
           "Title":"Harry"
         }
       ]

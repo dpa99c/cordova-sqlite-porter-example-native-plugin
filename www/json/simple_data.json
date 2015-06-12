@@ -1,19 +1,19 @@
 {
   "data":{
     "inserts":{
-      "Artist":[
+      "Album":[
         {
-          "Id":"1",
+          "AlbumId":"1",
           "Title":"Claire (replaced)"
         },
         {
-          "Id":"6",
+          "AlbumId":"6",
           "Title":"Jane (inserted)"
         }
       ]
     },
     "updates":{
-      "Artist":[
+      "Album":[
         {
           "set":
             {
@@ -22,15 +22,15 @@
           ,
           "where":
             {
-              "Id":"2"
+              "AlbumId":"2"
             }
         }
       ]
     },
     "deletes":{
-      "Artist":[
+      "Album":[
         {
-          "Id":"5"
+          "AlbumId":"5"
         }
       ]
     }

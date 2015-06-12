@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head></head>
+    <body>
+        <div data-role="page" id="port">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false">
+                <h1>Import/Export DB</h1>
+            </div>
+            <div data-role="content">
+                <div style="margin-top: 20px">
+                    <h2>Import</h2>
+                    <a href="#" class="ui-btn" onclick="doImportSql()">Import SQL content to DB</a>
+                    <a href="#" class="ui-btn" onclick="doImportJson()">Import JSON content to DB</a>
+                </div>
+                <hr/>
+                <div style="margin-top: 20px">
+                    <h2>Export</h2>
+                    <select id="export-type">
+                        <option value="dump">Data &amp; structure (dump)</option>
+                        <option value="data">Data only</option>
+                    </select>
+                    <a href="#" class="ui-btn" onclick="doExportSql()">Export DB as SQL content</a>
+                    <a href="#" class="ui-btn" onclick="doExportJson()">Export DB as JSON content</a>
+                </div>
+                <div style="margin-top: 20px">
+                    <h2>Wipe</h2>
+                    <a href="#" class="ui-btn" onclick="doWipe()">Wipe DB</a>
+                </div>
+            </div>
+
+            <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="load.html" class="load ui-btn" data-icon="false" data-corners="false" data-shadow="false" data-wrapperels="span" data-inline="true">Load file</a></li>
+                        <li><a href="content.html" class="content ui-btn" data-icon="false" data-corners="false" data-shadow="false" data-wrapperels="span" data-inline="true">Content</a></li>
+                        <li><a href="#" class="port ui-btn ui-btn-active" data-icon="false" data-corners="false" data-shadow="false" data-wrapperels="span" data-inline="true">Port</a></li>
+                        <li><a href="search.html" class="search ui-btn" data-icon="false" data-corners="false" data-shadow="false" data-wrapperels="span" data-inline="true">Search</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

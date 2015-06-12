@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head></head>
+    <body>
+        <div data-role="page" id="load">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false">
+                <h1>Load file content</h1>
+            </div>
+            <div data-role="content">
+                <div>
+                    <label>Database:</label>
+                    <select id="db-name">
+                        <option value="simple">Simple</option>
+                        <option value="complex">Complex</option>
+                    </select>
+                </div>
+
+                <div style="margin-top: 20px">
+                    <label>Data format:</label>
+                    <select id="format">
+                        <option value="sql">SQL</option>
+                        <option value="json">JSON</option>
+                    </select>
+                </div>
+
+                <div style="margin-top: 20px">
+                    <label>Data type:</label>
+                    <select id="type">
+                        <option value="dump">Dump (data &amp; structure)</option>
+                        <option value="data">Update (data only)</option>
+                    </select>
+                </div>
+
+                <div style="margin-top: 20px">
+                    <a href="#" class="ui-btn ui-btn-inline" onclick="loadFromFile()">Load data</a>
+                </div>
+            </div>
+            <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" class="load ui-btn ui-btn-active" data-icon="false" data-corners="false" data-shadow="false" data-wrapperels="span" data-inline="true">Load file</a></li>
+                        <li><a href="content.html" class="content ui-btn" data-icon="false" data-corners="false" data-shadow="false" data-wrapperels="span" data-inline="true">Content</a></li>
+                        <li><a href="port.html" class="port ui-btn" data-icon="false" data-corners="false" data-shadow="false" data-wrapperels="span" data-inline="true">Port</a></li>
+                        <li><a href="search.html" class="search ui-btn" data-icon="false" data-corners="false" data-shadow="false" data-wrapperels="span" data-inline="true">Search</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

@@ -1,4 +1,4 @@
-INSERT INTO Artist(Id,Title) VALUES ('6','Jane (inserted)');
-INSERT OR REPLACE INTO Artist(Id,Title) VALUES ('1','Claire (replaced)');
-UPDATE Artist SET Title='Susan (updated)' WHERE Id='2';
-DELETE FROM Artist WHERE Id='5';
+INSERT INTO Album(AlbumId,Title) VALUES ('6','Jane (inserted)');
+INSERT OR REPLACE INTO Album(AlbumId,Title) VALUES ('1','Claire (replaced)');
+UPDATE Album SET Title='Susan (updated)' WHERE AlbumId='2';
+DELETE FROM Album WHERE AlbumId='5';

@@ -1,0 +1,41 @@
+.ui-btn{
+    font-size: 14px !important;
+}
+
+#text{
+    min-height: 400px;
+    overflow-y: scroll;
+}
+
+
+#file.simple .complex,
+#file.complex .simple,
+#file.sql .json,
+#file.json .sql{
+    display: none;
+}
+
+#data{
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+#search .ui-input-search{
+    max-width: 70%;
+    float: left;
+}
+
+#search .ui-input-btn{
+    float: right;
+    margin-right: 0 !important;
+}
+
+#search .results{
+    margin-top: 20px;
+    clear: left;
+}
+
+#search-results{
+    min-height: 300px;
+    overflow-y: scroll;
+}

@@ -7,77 +7,21 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
+        <!-- Enable all requests, inline styles, and eval() -->
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+
         <script type="text/javascript" src="cordova.js"></script>
 
+
         <script type="text/javascript" src="lib/jquery-2.1.3.min.js"></script>
+
+        <link rel="stylesheet" href="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+        <script type="text/javascript" src="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <link rel="stylesheet" href="css/index.css">
         <script type="text/javascript" src="js/index.js"></script>
-
-        <style type="text/css">
-            #file.simple .complex,
-            #file.complex .simple,
-            #file.sql .json,
-            #file.json .sql{
-                display: none;
-            }
-
-            #data{
-                border: 1px solid #000;
-                padding: 8px;
-            }
-        </style>
+        <script type="text/javascript" src="js/Performance.js"></script>
     </head>
-    <body>
-        <textarea id="result" style="min-width:100%; min-height: 200px"></textarea>
-
-        <div style="margin-top: 20px">
-            <button onclick="doImportSql()">Import SQL<br/>to DB</button>
-            <button onclick="doImportJson()">Import JSON<br/>to DB</button>
-            <button onclick="doWipe()">Wipe DB</button>
-        </div>
-
-        <hr/>
-
-        <div style="margin-top: 20px">
-            <button onclick="doExportSql()">Export DB<br/>as SQL</button>
-            <button onclick="doExportJson()">Export DB<br/>as JSON</button>
-            <select id="export-type">
-                <option value="dump">Data &amp; structure (dump)</option>
-                <option value="data">Data only</option>
-            </select>
-        </div>
-
-        <hr/>
-
-        <div id="data">
-            <p>Load data from a file</p>
-            <div>
-                <label>Database:</label>
-                <select id="db-name">
-                    <option value="simple">Simple</option>
-                    <option value="complex">Complex</option>
-                </select>
-            </div>
-
-            <div style="margin-top: 20px">
-                <label>Data format:</label>
-                <select id="format">
-                    <option value="sql">SQL</option>
-                    <option value="json">JSON</option>
-                </select>
-            </div>
-
-            <div style="margin-top: 20px"><div>
-                <label>Data type:</label>
-                <select id="type">
-                    <option value="dump">Dump (data &amp; structure)</option>
-                    <option value="data">Update (data only)</option>
-                </select>
-            </div>
-
-            <div style="margin-top: 20px">
-                <button onclick="loadFromFile()">Load data</button>
-            </div>
-        </div>
-    </body>
+    <body></body>
 </html>
 
