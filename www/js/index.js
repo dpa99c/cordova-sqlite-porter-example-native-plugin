@@ -1,9 +1,9 @@
-var db, text, searchTable;
+var db, text;
 
 function onDeviceReady(){
     // Init performance API
     Performance.init();
-    
+
     // Open native DB via plugin
     db = window.sqlitePlugin.openDatabase({name: "test.db"});
 
@@ -14,6 +14,7 @@ function onDeviceReady(){
         var activePageId = $.mobile.pageContainer.pagecontainer("getActivePage")[0].id;
         switch (activePageId) {
             case 'content':
+                $('#text').val("Loading...");
                 $('#text').val(text);
                 break;
             case 'search':
@@ -37,6 +38,9 @@ function loadFromFile(){
         var time = Performance.stopMeasuring("load");
         $(":mobile-pagecontainer").one( "pagecontainerload", function(){
             text = contents;
+        });
+        $(":mobile-pagecontainer").one( "pagecontainerbeforeshow", function(){
+            $('#text').attr('placeholder', "Loading...");
         });
         $(":mobile-pagecontainer").one( "pagecontainershow", function(){
             alert("Loaded '"+filename+"' in "+time+" ms");
@@ -141,10 +145,10 @@ function doSearch(e){
         tx.executeSql('SELECT * FROM Album WHERE ([Title] LIKE "%'+term+'%")', [],
             function (tx, rslt) {
                 if (rslt.rows && rslt.rows.length > 0) {
-                   for(var i=0; i<rslt.rows.length; i++){
-                       var row = rslt.rows.item(i);
-                       results += "Id="+row.AlbumId+"; Title="+row.Title+"\n";
-                   }
+                    for(var i=0; i<rslt.rows.length; i++){
+                        var row = rslt.rows.item(i);
+                        results += "Id="+row.AlbumId+"; Title="+row.Title+"\n";
+                    }
                 }else{
                     results = "[No results]";
                 }
