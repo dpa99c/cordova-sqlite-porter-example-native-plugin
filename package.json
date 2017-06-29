@@ -1,0 +1,21 @@
+{
+    "name": "uk.co.workingedge.phonegap.plugins.example.sqliteporter.nativeplugin",
+    "version": "0.0.1",
+    "displayName": "sqlite-porter native plugin example",
+    "cordova": {
+        "platforms": [
+            "android"
+        ],
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-sqlite-storage": {},
+            "uk.co.workingedge.cordova.plugin.sqliteporter": {}
+        }
+    },
+    "dependencies": {
+        "cordova-android": "~6.2.3",
+        "cordova-plugin-whitelist": "1",
+        "cordova-sqlite-storage": "~2.0.4",
+        "uk.co.workingedge.cordova.plugin.sqliteporter": "*"
+    }
+}

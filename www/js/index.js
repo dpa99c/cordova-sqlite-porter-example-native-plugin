@@ -5,7 +5,7 @@ function onDeviceReady(){
     Performance.init();
 
     // Open native DB via plugin
-    db = window.sqlitePlugin.openDatabase({name: "test.db"});
+    db = window.sqlitePlugin.openDatabase({name: "test.db", location: 'default'});
 
     // First page is load
     $(":mobile-pagecontainer").pagecontainer( "change", "load.html");
