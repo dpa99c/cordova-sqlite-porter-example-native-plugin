@@ -16,6 +16,6 @@
         "cordova-android": "~6.2.3",
         "cordova-plugin-whitelist": "1",
         "cordova-sqlite-storage": "~2.0.4",
-        "uk.co.workingedge.cordova.plugin.sqliteporter": "*"
+        "uk.co.workingedge.cordova.plugin.sqliteporter": "..\\cordova-sqlite-porter"
     }
 }
